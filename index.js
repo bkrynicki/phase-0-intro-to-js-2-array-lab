@@ -12,14 +12,15 @@ function destructivelyRemoveLastCat(){
 function destructivelyRemoveFirstCat(){
     cats.shift();
 }
-const afterCats = ["Broom"];
+
 function appendCat(name){
-    let afterCats = [...cats, "Broom"];
+    let afterCats = [...cats, name];
     return afterCats;
 }
-const beforeCats = ["Arnold"]
+
+
 function prependCat(name){
-    let beforeCats = ["Arnold", ...cats];
+    let beforeCats = [name, ...cats];
     return beforeCats;
 }
 
